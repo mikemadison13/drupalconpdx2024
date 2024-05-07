@@ -1,0 +1,13 @@
+name: d10
+recipe: drupal10
+config:
+  php: '8.1'
+  webroot: docroot
+services:
+  migrate:
+    type: mysql:5.7
+    portforward: true
+    creds:
+      user: migrate
+      password: migrate
+      database: migrate
